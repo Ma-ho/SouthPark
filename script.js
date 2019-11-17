@@ -78,7 +78,7 @@ const players = [
 const currentPage = document.location.href
 
 
-if (currentPage.endsWith('enter.html') || currentPage.endsWith('index.html')){
+if (currentPage.endsWith('index.html') || currentPage.endsWith('fighters.html')){
     //get the characters in the DOM
     const kyle = document.getElementById('kyle');
     const kenny = document.getElementById('kenny');
