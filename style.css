@@ -93,14 +93,14 @@ p {
     background: url(images/btn_player_one.png) no-repeat;
     display: block;
     width: 153px;
-    padding: 30px 0px;
+    height: 79px;
 }
 
 #btn_player_two {
     background: url(images/btn_player_two.png) no-repeat;
     display: block;
     width: 153px;
-    padding: 30px 0px;
+    height: 79px;
 }
 
 #btn_player_one,
@@ -130,7 +130,7 @@ p {
     top: 415px;
     background: url(images/btn_play.png) no-repeat;
     width: 200px;
-    padding: 30px 0px;
+    padding: 20px 0px;
     text-decoration: none;
     display: none;
 }
