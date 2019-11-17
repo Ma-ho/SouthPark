@@ -4,58 +4,58 @@ const characters = [
         name: "Kyle Broflovski",
         pictureSmall: "images/kyle_broflovski_small.png",
         pictureLarge: "images/kyle_broflovski_large.png",
-        sound: new Audio("sound/Yourastupidahole.mp3")
+        sound: new Audio("sounds/Yourastupidahole.mp3")
     },
     {
         name: "Kenny McCormick",
         pictureSmall: "images/kenny_mcCormick_small.png",
         pictureLarge: "images/kenny_mcCormick_large.png",
-        sound: new Audio("sound/Kennylaughing.mp3")
+        sound: new Audio("sounds/Kennylaughing.mp3")
     },
     {
         name: "Eric Theodore Cartman",
         pictureSmall: "images/eric_cartman_small.png",
         pictureLarge: "images/eric_cartman_large.png",
-        sound: new Audio("sound/Hippy.mp3")
+        sound: new Audio("sounds/Hippy.mp3")
     },
     {
         name: "Stan Marsh",
         pictureSmall: "images/stan_marsh_small.png",
         pictureLarge: "images/stan_marsh_large.png",
-        sound: new Audio("sound/Dirtylittlebastard.mp3")
+        sound: new Audio("sounds/Dirtylittlebastard.mp3")
     },
     {
         name: "Chef",
         pictureSmall: "images/chef_small.png",
         pictureLarge: "images/chef_large.png",
-        sound: new Audio("sound/chef_fromyourass.mp3")
+        sound: new Audio("sounds/chef_fromyourass.mp3")
     },
     {
         name: "Towelie",
         pictureSmall: "images/towelie_small.png",
         pictureLarge: "images/towelie_large.png",
-        sound: new Audio("sound/towelie_alittlehigh.mp3")
+        sound: new Audio("sounds/towelie_alittlehigh.mp3")
     },
     {
         name: "Timmy",
         pictureSmall: "images/timmy_small.png",
         pictureLarge: "images/timmy_large.png",
-        sound: new Audio("sound/timmy_scream.mp3")
+        sound: new Audio("sounds/timmy_scream.mp3")
     },
     {
         name:"Hennifer Lopez",
         pictureLarge: "images/hennifer_lopez_large.png",
-        sound: new Audio("sound/JenniferLopez.mp3")
+        sound: new Audio("sounds/JenniferLopez.mp3")
     },
     {
         name:"The Coon",
         pictureLarge: "images/the_coon_large.png",
-        sound: new Audio("sound/Coon.mp3")
+        sound: new Audio("sounds/Coon.mp3")
     },
     {
         name:"Professor Chaos",
         pictureLarge: "images/professor_chaos_large.png",
-        sound: new Audio("sound/Chaos.mp3")
+        sound: new Audio("sounds/Chaos.mp3")
     }
 ];
 
@@ -86,7 +86,6 @@ if (currentPage.endsWith('enter.html') || currentPage.endsWith('index.html')){
     const stan = document.getElementById('stan');
     const chef = document.getElementById('chef');
     const towelie = document.getElementById('towelie');
-    const wendy = document.getElementById('wendy');
     const timmy = document.getElementById('timmy');
     const mystery = document.getElementById('mystery');
 
@@ -267,6 +266,14 @@ if (currentPage.endsWith('game.html')){
                 // first click
                 hasFlippedCard = true;
                 firstCard = this;
+                
+                if (countForCheat >= 10){
+                for (let i = 0 ; i < cards.length ; i++){
+                    if (cards[i].dataset.framework === firstCard.dataset.framework){
+                        cards[i].style.border = "2px red solid"
+                    }
+                }
+            }
 
             return ;
             } 
@@ -285,7 +292,7 @@ if (currentPage.endsWith('game.html')){
 
     // isMatch ? disableCards() : unflipcards();
 
-        const sound = new Audio("sound/fight1.mp3");
+        const sound = new Audio("sounds/fight1.mp3");
 
         if (isMatch){
             disableCards()
@@ -340,11 +347,21 @@ if (currentPage.endsWith('game.html')){
         }, 1200);
     }
 
-
-
-
     function goToUrl (wanted) {
         document.location.href = wanted
     }
+
+    //Mode triche
+    let countForCheat = 0
+    document.getElementById("KO").addEventListener('click', function(){
+        countForCheat += 1
+        console.log(countForCheat)
+        if (countForCheat === 10) {
+            document.getElementById("KO").style.border = '2px yellow solid'
+            console.log("Boum")
+        }
+    })
+
+    
 
 }
