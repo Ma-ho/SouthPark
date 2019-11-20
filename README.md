@@ -7,7 +7,6 @@ Par groupe de cinq nous avons dû réaliser un jeu de memory sur le thème de So
 * [HTML5]
 * [CSS3]
 * [Javascript]
-* [Reactstrap] (https://reactstrap.github.io/)
 
 ## Versioning
 
