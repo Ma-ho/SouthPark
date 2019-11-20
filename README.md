@@ -1,21 +1,16 @@
-# Calculator
+# Memory Battle Amazing II
 
-Projet personel réalisé dans le cadre de ma formation à la Wild Code School. 
-
+Projet réalisé en Octobre 2019 dans le cadre de ma formation à la Wild Code School.
+Par groupe de cinq nous avons dû réaliser un jeu de memory sur le thème de South Park, à l’aide de Javascript, HTML5 et CSS3. Nous sommes partis sur l’univers des jeux de combats, à chaque fois que l'on trouve une paire de cartes on inflige des dégâts à son adversaire.
 
 ## Built With
-* [react] (https://fr.reactjs.org/)
-* [mathjs] (https://mathjs.org/index.html)
-* [react-icons] (https://reactstrap.github.io/)
+* [HTML5]
+* [CSS3]
+* [Javascript]
 
 ## Versioning
 
-Version disponnible sur ce lien [tags on this repository](https://ma-ho.github.io/memory-battle/). 
-
-## Authors
-
-* **Maïté Armengaud** 
-
+Version disponible sur ce lien [memory-battle.io](https://ma-ho.github.io/memory-battle/). 
 
 
 
