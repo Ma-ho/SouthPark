@@ -76,7 +76,6 @@ p {
     background: url(images/btn_play.png) no-repeat;
     width: 200px;
     height: 77px;
-    text-decoration: none;
 }
 
 /* page index.html ---------------*/
@@ -130,7 +129,7 @@ p {
     top: 415px;
     background: url(images/btn_play.png) no-repeat;
     width: 200px;
-    padding: 27px 0px;
+    padding: 22px 0px;
     display: none;
 }
 
