@@ -437,8 +437,8 @@ p {
 
 /* Board Game ---------------*/
 .memory-game {
-    width: 60%;
-    height: auto;
+    width: 50%;
+    height: auto; 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -454,8 +454,8 @@ p {
 
 .memory-card {
     border-radius: 5px;
-    width: 130px;
-    height: 174px;
+    width: 105px;
+    height: 130px;
     margin: 10px;
     position: relative;
     -webkit-transform: scale(1);
