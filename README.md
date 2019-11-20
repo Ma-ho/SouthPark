@@ -10,7 +10,7 @@ Par groupe de cinq nous avons dû réaliser un jeu de memory sur le thème de So
 
 ## Versioning
 
-Version disponnible sur ce lien [memory-battle.io](https://ma-ho.github.io/memory-battle/). 
+Version disponible sur ce lien [memory-battle.io](https://ma-ho.github.io/memory-battle/). 
 
 
 
