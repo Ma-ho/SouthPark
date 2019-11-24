@@ -1,5 +1,5 @@
 # Memory Battle Amazing II
-
+![image](https://github.com/Ma-ho/memory-battle/blob/master/images/readme.jpg)
 Projet réalisé en Octobre 2019 dans le cadre de ma formation à la Wild Code School.
 Par groupe de cinq nous avons dû réaliser un jeu de memory sur le thème de South Park, à l’aide de Javascript, HTML5 et CSS3. Nous sommes partis sur l’univers des jeux de combats, à chaque fois que l'on trouve une paire de cartes on inflige des dégâts à son adversaire.
 
